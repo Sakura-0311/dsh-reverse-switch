@@ -56,11 +56,11 @@
       "versions": [
         {
           "version": "0.1.0",
-          "publishTimestamp": 1794147530,
+          "publishTimestamp": 1794151338,
           "source": {
             "type": "git",
-            "url": "https://gitee.com/yuluo4106/dsh-reverse-switch",
-            "commit": "87d36477ddfcdb953d14f4aeafca75ebbb34ba00"
+            "url": "https://github.com/Sakura-0311/dsh-reverse-switch",
+            "commit": "86f6506fdd3c6b0b55ee142e84256e4f1e145551"
           },
           "engines": {
             "dsh": ">=0.2.0-rc.2"
