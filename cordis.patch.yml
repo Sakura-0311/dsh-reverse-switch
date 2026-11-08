@@ -1,0 +1,5 @@
+# dsh-reverse-switch 组合包贡献的配置层。
+# insert 行的 name 必须是可解析的 Node 包名；config 省略，全部走插件默认值。
+- insert:
+    - id: reverse-switch
+      name: dsh-reverse-switch

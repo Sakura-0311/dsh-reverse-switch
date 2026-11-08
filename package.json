@@ -1,0 +1,53 @@
+{
+  "name": "dsh-reverse-switch",
+  "version": "0.1.0",
+  "description": "逆向开关 — 左侧栏「逆向」入口，一键同时启停 REA 与 Craft Anything 两套逆向 MCP 工具链（side-panel switch for reverse-engineering MCP backends in DeepSeek Harness）",
+  "type": "module",
+  "license": "MIT",
+  "author": "YG",
+  "homepage": "https://www.npmjs.com/package/dsh-reverse-switch",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "market",
+    "cordis.patch.yml",
+    "README.zh.md",
+    "README.md"
+  ],
+  "engines": {
+    "dsh": ">=0.2.0-rc.2"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh",
+    "reverse-engineering",
+    "mcp",
+    "rea",
+    "craft-anything",
+    "逆向"
+  ]
+}

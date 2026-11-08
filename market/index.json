@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "title": {
+    "en": "YG · DSH plugins",
+    "zh": "YG · DSH 插件"
+  },
+  "description": {
+    "en": "Plugins for DeepSeek Harness maintained by YG.",
+    "zh": "YG 维护的 DeepSeek Harness 插件。"
+  },
+  "metadata": {
+    "categories": {
+      "developer-tools": {
+        "title": {
+          "en": "Developer tools",
+          "zh": "开发者工具"
+        }
+      }
+    },
+    "labels": {
+      "reverse-engineering": {
+        "title": {
+          "en": "Reverse engineering",
+          "zh": "逆向"
+        }
+      },
+      "mcp": {
+        "title": {
+          "en": "MCP",
+          "zh": "MCP"
+        }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-reverse-switch",
+      "title": {
+        "en": "Reverse switch",
+        "zh": "逆向开关"
+      },
+      "description": {
+        "en": "A sidebar entry that turns both reverse-engineering MCP backends on or off at once: REA (rea-agents) and Craft Anything. Off by default, so the toolchain costs no context until you click it.",
+        "zh": "左侧栏一个「逆向」入口，一键同时启停两套逆向 MCP 后端：REA（rea-agents）与 Craft Anything。默认关闭，不占用上下文，点了才起来。"
+      },
+      "icon": "icons/reverse-mode.svg",
+      "author": "YG",
+      "homepage": "https://www.npmjs.com/package/dsh-reverse-switch",
+      "metadata": {
+        "category": "developer-tools",
+        "labels": [
+          "reverse-engineering",
+          "mcp"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794147530,
+          "source": {
+            "type": "git",
+            "url": "https://gitee.com/yuluo4106/dsh-reverse-switch",
+            "commit": "87d36477ddfcdb953d14f4aeafca75ebbb34ba00"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-rc.2"
+          }
+        }
+      ]
+    }
+  ]
+}
